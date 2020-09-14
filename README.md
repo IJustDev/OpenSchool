@@ -1,3 +1,16 @@
-# Open School
+<div align="center">
 
-A web app to manageadministrative tasks.
+
+![Open School Logo](./resources/logo.svg)
+
+# Open School
+### The solution for administrative tasks in your school!
+
+</div>
+
+
+## Installation
+Coming soon!
+
+## Usage
+Coming soon!
