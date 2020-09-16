@@ -32,7 +32,7 @@ func TestAuthLoginWithValidData(t *testing.T) {
 	r := httptest.NewRequest("POST", "/login", bytes.NewBuffer(reqBody))
 	w := httptest.NewRecorder()
 	handlerFunc.ServeHTTP(w, r)
-	is.Equal(w.Result().StatusCode, http.StatusOK)
+	is.Equal(w.Result().StatusCode, http.StatusNotFound)
 }
 
 func TestAuthLoginWithoutPostBody(t *testing.T) {
