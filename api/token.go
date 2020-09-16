@@ -1,20 +1,21 @@
 package main
 
 import (
-	"github.com/dgrijalva/jwt-go"
 	"os"
 	"time"
+
+	"github.com/dgrijalva/jwt-go"
 )
 
 type Token struct {
 	Token      string `json:"token"`
 	Exp        int64  `json:"exp"`
-	UserId     int64  `json:"userId"`
+	UserId     int    `json:"userId"`
 	Authorized bool   `json:"authorized"`
 	Admin      bool   `json:"admin"`
 }
 
-func newToken(userId int64, admin bool) (*Token, error) {
+func newToken(userId int, admin bool) (*Token, error) {
 	os.Setenv("ACCESS_SECRET", "asdf")
 	expires_in := time.Now().Add(time.Minute * 15).Unix()
 
