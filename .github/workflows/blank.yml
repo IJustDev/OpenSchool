@@ -35,4 +35,4 @@ jobs:
       - name: Test backend
         run: |
           cd api
-          go test *.go
+          go test *.go -v
