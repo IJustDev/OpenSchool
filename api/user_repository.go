@@ -8,6 +8,7 @@ type BaseUserRepository interface {
 	GetUserById(id int) *models.User
 	GetUserByUsername(username string) *models.User
 	InsertUser(user models.User) bool
+	GetAllUsers() []models.User
 }
 
 type LiveUserRepository struct{}
@@ -22,6 +23,10 @@ func (u LiveUserRepository) GetUserByUsername(username string) *models.User {
 
 func (u LiveUserRepository) InsertUser(user models.User) bool {
 	return true
+}
+
+func (u LiveUserRepository) GetAllUsers() []models.User {
+	return []models.User{}
 }
 
 type MockUserRepository struct {
@@ -40,6 +45,10 @@ func (u *MockUserRepository) GetUserByUsername(username string) *models.User {
 		}
 	}
 	return nil
+}
+
+func (u *MockUserRepository) GetAllUsers() []models.User {
+	return u.users
 }
 
 func (u *MockUserRepository) GetUserById(id int) *models.User {

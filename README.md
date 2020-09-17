@@ -8,9 +8,5 @@
 
 </div>
 
-
-## Installation
-Coming soon!
-
-## Usage
-Coming soon!
+## Documentation
+Check the documentation located in the `docs/` folder.
