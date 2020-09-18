@@ -1,0 +1,37 @@
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-go@v2.1.2
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          
+      - uses: helaili/jekyll-action@2.0.4
+          env:
+            JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+          with:
+            jekyll_src: 'website'
+
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/setup-go@v2.1.2
+      - uses: actions/checkout@v2
+
+      - name: Test backend
+        run: |
+          cd api
+          go test *.go -v
