@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Free",
+    "description": "The whole mission of this project is to be free for everyone and upgrade the current workflows.",
+    "image": "images/features/noun_branding_1885335.svg"
+  },
+  {
+    "title": "Easy to use",
+    "description": "Due to the clean webinterface everybody can learn to use the software in almost no time.",
+    "image": "images/features/noun_The Process_1885341.svg"
+  },
+  {
+    "title": "Lightning fast",
+    "description": "Thanks to the simple and minimalistic design OpenSchool is as fast as a lightning strike.",
+    "image": "images/features/noun_3d modeling_1885342.svg"
+  }
+]
