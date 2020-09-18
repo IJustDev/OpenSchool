@@ -1,4 +1,4 @@
-baseurl: ''
+baseurl: '/OpenSchool'
 exclude: ['README.md']
 permalink: pretty
 title: 'OpenSchool'
