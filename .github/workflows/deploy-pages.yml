@@ -13,13 +13,13 @@ jobs:
       - uses: actions/setup-go@v2.1.2
           
       - uses: helaili/jekyll-action@2.0.4
-          env:
+        env:
             JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
-          with:
+        with:
             jekyll_src: 'website'
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./public
