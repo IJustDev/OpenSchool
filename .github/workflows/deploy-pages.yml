@@ -17,3 +17,4 @@ jobs:
             JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
         with:
             jekyll_src: 'website'
+            custom_domain: 'openschool.dev'
