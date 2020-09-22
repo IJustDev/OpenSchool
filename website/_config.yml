@@ -3,6 +3,7 @@ exclude: ['README.md']
 permalink: pretty
 title: 'OpenSchool'
 
+github: https://github.com/IJustDev/OpenSchool
 google_analytics_id: null
 homepage:
   show_call_box: true

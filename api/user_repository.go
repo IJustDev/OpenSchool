@@ -52,8 +52,10 @@ func (u *MockUserRepository) GetAllUsers() []models.User {
 }
 
 func (u *MockUserRepository) GetUserById(id int) *models.User {
-	return &models.User{
-		ID:       20,
-		Username: "Username",
+	for _, element := range u.users {
+		if element.ID == id {
+			return &element
+		}
 	}
+	return nil
 }
