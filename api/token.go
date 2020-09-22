@@ -16,7 +16,6 @@ type Token struct {
 }
 
 func newToken(userId int, admin bool) (*Token, error) {
-	os.Setenv("ACCESS_SECRET", "asdf")
 	expires_in := time.Now().Add(time.Minute * 15).Unix()
 
 	atClaims := jwt.MapClaims{}

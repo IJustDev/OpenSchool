@@ -1,9 +1,12 @@
 package main
 
 import (
+	"database/sql"
 	"encoding/json"
+	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/mux"
 	"net/http"
+	"time"
 )
 
 type server struct {
@@ -32,5 +35,14 @@ func (s *server) decode(r *http.Request, v interface{}) error {
 	if err := json.NewDecoder(r.Body).Decode(v); err != nil {
 		return err
 	}
+	return nil
+}
+
+func (s *server) connectToDatabase(connectionString string) error {
+	db, err := sql.Open("mysql", connectionString)
+	if err != nil {
+		return err
+	}
+	db.SetConnMaxLifetime(time.Minute * 3)
 	return nil
 }

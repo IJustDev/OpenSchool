@@ -1,6 +1,9 @@
 package main
 
-import "net/http"
+import (
+	"context"
+	"net/http"
+)
 
 func (s *server) onlyAdmin(h http.HandlerFunc) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
@@ -8,6 +11,7 @@ func (s *server) onlyAdmin(h http.HandlerFunc) http.HandlerFunc {
 			s.respond(w, r, nil, http.StatusUnauthorized)
 			return
 		}
-		h(w, r)
+		ctx := context.WithValue(r.Context(), "user", nil)
+		h(w, r.WithContext(ctx))
 	}
 }
