@@ -6,6 +6,14 @@
 
 </div>
 
+
+## Features
+- :tada: seating plan management
+- :bookmark: student absence management
+- :memo: student grade manager with print function
+- document cloud
+- :chart_with_upwards_trend: statistics on how students grades evolved
+
 ## Installation
 ### Dependencies
 ```sh
