@@ -1,3 +1,5 @@
+name: Landing Page
+
 on:
   push:
     branches: [master]

@@ -1,4 +1,4 @@
-name: CI
+name: App
 
 on:
   push:
@@ -7,14 +7,14 @@ on:
     branches: [master]
 
 jobs:
-  build:
+  build_backend:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-go@v2.1.2
 
-      - name: Build binary
+      - name: Build backend binary
         run: |
           cd api
           go build
@@ -25,7 +25,7 @@ jobs:
           name: build
           path: ./api/main
 
-  test:
+  test_backend:
     runs-on: ubuntu-latest
 
     steps:
