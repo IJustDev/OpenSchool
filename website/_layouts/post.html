@@ -9,8 +9,15 @@ layout: default
             <h3 class="subtitle">{{page.subtitle}}</h3>
             <div class="content fancy">{{content | toc}}</div>
         </div>
-        <div class="col-0 col-md-4">
-            {%include sidebar.html%}
+        <div class="col-12 col-md-4">
+            <h2>About the author</h2>
+            <div class="author">
+                <img src="{{site.baseurl}}/{{page.author_img}}"/>
+                <div class="author-details">
+                    <h2><a href="https://github.com/{{page.author}}">{{page.author}}</a></h2>
+                    <h4>Software Engineer</h4>
+                </div>
+            </div>
         </div>
     </div>
 </div>

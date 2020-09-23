@@ -18,11 +18,11 @@ seo:
   meta_og_title: "Open School"
   meta_og_type: "website"
   meta_og_url: "https://openschool.dev"
-  meta_og_image: "https://raw.githubusercontent.com/zerostaticthemes/jekyll-serif-theme/master/screenshots/tn.png"
+  meta_og_image: "https://raw.githubusercontent.com/ijustdev/openschool/master/website/screenshots/tn.png"
   meta_og_description: "OpenSchool is the free software solution for administrative tasks in your school."
-  # meta_twitter_card: "summary"
-  # meta_twitter_site: "@zerostaticio"
-  # meta_twitter_creator: "@zerostaticio"
+  meta_twitter_card: "ijustdev"
+  meta_twitter_site: "@ijustdev"
+  meta_twitter_creator: "@ijustdev"
 
 collections:
   services:

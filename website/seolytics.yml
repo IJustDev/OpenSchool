@@ -1,0 +1,3 @@
+keyword: "school management"
+actions:
+    - checker.keyword.amount
