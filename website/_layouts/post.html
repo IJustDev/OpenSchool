@@ -12,7 +12,7 @@ layout: default
         <div class="col-12 col-md-4">
             <h2>About the author</h2>
             <div class="author">
-                <img src="{{site.baseurl}}/{{page.author_img}}"/>
+                <img alt="{{ page.author_img }}" class="img-fluid mb-2" src="{{ page.author_img | relative_url }}" />
                 <div class="author-details">
                     <h2><a href="https://github.com/{{page.author}}">{{page.author}}</a></h2>
                     <h4>Software Engineer</h4>
