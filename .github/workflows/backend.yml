@@ -1,4 +1,4 @@
-name: App
+name: Backend
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [master]
 
 jobs:
-  build_backend:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,7 +25,7 @@ jobs:
           name: build
           path: ./api/main
 
-  test_backend:
+  test:
     runs-on: ubuntu-latest
 
     steps:
