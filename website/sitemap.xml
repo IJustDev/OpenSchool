@@ -20,7 +20,7 @@ layout: null
       <url>
         <loc>{{ site.url }}{{ page.url }}</loc>
         <lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
-        <changefreq>{{ page.sitemap.changefreq }}</changefreq>
+        <changefreq>montly</changefreq>
         <priority>{{ page.sitemap.priority }}</priority>
        </url>
     {% endif %}
