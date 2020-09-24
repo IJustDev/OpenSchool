@@ -7,7 +7,7 @@ intro_image_absolute: true
 intro_image_hide_on_mobile: true
 sitemap:
     lastmod: 2020-09-22T20:00
-    priority: 1
+    priority: 1.0
 ---
 
 # OpenSchool - The Solution for Schools.
