@@ -39,7 +39,6 @@ $sub-footer-text-color: $white;
 // Components
 @import 'components/type';
 @import 'components/page';
-@import 'components/blog';
 @import 'components/header';
 @import 'components/footer';
 @import 'components/sub-footer';
@@ -61,6 +60,8 @@ $sub-footer-text-color: $white;
 @import 'pages/home';
 @import 'pages/team/team-summary';
 @import 'pages/services/page-services-single';
+@import 'pages/blog';
+@import 'pages/pricing';
 
 body {
   font-size: 16px;

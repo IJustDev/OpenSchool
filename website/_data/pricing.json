@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Mini School",
+        "description": "Up to 100 students",
+        "price": "99.99",
+        "features": [
+            "Seating Plan Management",
+            "Student Absence Management"
+        ]
+    },
+    {
+        "title": "Small School",
+        "description": "Up to 1000 students",
+        "price": "199.99",
+        "bestseller": true,
+        "features": [
+            "Digital classbook",
+            "Student Grade Manager"
+        ]
+    },
+    {
+        "title": "Next level School",
+        "description": "Up to 2000 students",
+        "price": "499.99",
+        "features": [
+            "Document Cloud",
+            "Statistics"
+        ]
+    }
+]

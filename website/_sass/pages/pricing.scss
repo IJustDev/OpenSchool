@@ -1,0 +1,30 @@
+.pricing-details {
+    margin-top: 15px;
+    .price {
+        margin-top: 25px;
+        color: $primary;
+        font-size: 20pt;
+        font-weight: bold;
+        font-family: $font-family-base;
+    }
+}
+
+.pricing-features {
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+    flex-direction: column;
+    .pricing-feature {
+        font-family: $font-family-heading;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        font-weight: thin;
+    }
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.model-title {
+    color: lighten($primary, 15);
+}
