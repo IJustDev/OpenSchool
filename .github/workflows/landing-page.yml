@@ -13,9 +13,17 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - uses: actions/cache@v1
+        with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
+
       - uses: ijustdev/jekyll-action@2.0.6
         env:
             JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+            GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
         with:
             jekyll_src: 'website'
             custom_domain: 'openschool.dev'
