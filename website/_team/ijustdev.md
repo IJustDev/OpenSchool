@@ -7,5 +7,4 @@ jobtitle: "Founder"
 promoted: true
 weight: 2
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Tortor at risus viverra adipiscing at in.
+I am a senior software engineer with 10+ years of experience. Since I've started programming I always wanted to help somebody with my skills. Many friends of mine told me that the schools they work in are managed quite badly.

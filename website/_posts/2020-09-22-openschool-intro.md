@@ -36,7 +36,7 @@ Because it is an open source school management software. This educational softwa
 The only possible pricing will be the installation or hosting proccess.
 
 ## Installation
-### SaaS
+### [SaaS][saas]
 Software as a Service describes a situation where you are not deploying or installing anything by yourself and use the software via your browser.
 OpenSchool is going to offer such SaaS solutions (Check the [pricing][pricing] for further information).
 SaaS is by far the most simple way to access our SchoolSoftware. You and your employees just open an website in your browser and log in with your credentials on a so called OpenSchool Workspace.
@@ -47,3 +47,4 @@ The counterpart where you need to install everything by yourself is called stand
 [installation-guide]: https://github.com/IJustDev/OpenSchool/tree/master/docs
 [pricing]: {{site.baseurl}}/pricing
 [openschool]: https://github.com/IJustDev/OpenSchool
+[saas]: https://en.wikipedia.org/wiki/Software_as_a_service

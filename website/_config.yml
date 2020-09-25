@@ -13,7 +13,7 @@ logo:
   desktop: "images/logo/logo.svg"
   desktop_height: "36px"
 footer:
-  copyright_text: 'Free Jekyll theme by <a class="zerostatic" href="https://www.zerostatic.io">www.zerostatic.io</a>'
+    copyright_text: 'OpenSchool by <a class="zerostatic" href="https://royalzsoftware.de">www.royalzsoftware.de</a>'
 
 seo:
   meta_og_title: "Open School"

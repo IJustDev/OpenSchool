@@ -8,4 +8,4 @@ intro_image_hide_on_mobile: false
 
 # Services that make your school awesome
 
-Aliquam erat volutpat. Morbi nisl tortor, dignissim eget efficitur vel, auctor non felis. Fusce quis viverra mi. Aenean quis massa pretium, ullamcorper nisi eget, hendrerit odio.
+With the services of OpenSchool you are in control of everything, that makes your school work more productive and spend less time on time wasting.

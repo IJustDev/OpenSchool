@@ -1,12 +1,13 @@
 <div class="call">
-  <div class="call-box-top">
-    {% if site.data.contact.github %}
-        <div class="call-phone"><strong>GitHub: </strong> {{ site.data.contact.github }} </div>
-    {% endif %}
-  </div>
+    <div class="call-box-top">
+        {% if site.data.contact.github %}
+        <div class="call-phone"><strong>GitHub: </strong><a href="{{site.data.contact.github}}">{{ site.data.contact.github }}</a></div>
+        <div class="call-phone"><strong>Email: </strong><a href="mailto://{{site.data.contact.email}}">{{site.data.contact.email}}</a></div>
+        {% endif %}
+    </div>
     {% if include.show_button %}
-      <div class="call-box-bottom">
+    <div class="call-box-bottom">
         <a href="{{ site.data.contact.contact_button_link }}" class="button">Contact</a>
-      </div>
+    </div>
     {% endif %}
 </div>
